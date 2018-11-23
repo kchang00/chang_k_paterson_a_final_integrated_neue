@@ -9,8 +9,11 @@ Created folder structure + added scaffold flex (template)
 
 TASKS:
 
-Kayla: Add logo area
-Aaron:
+Kayla: 
+- Add logo area
+
+Aaron: 
+- practice changing layout
 
 TIPS for Editing Flex Layout:
 
