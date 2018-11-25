@@ -9,7 +9,7 @@ Created folder structure + added scaffold flex (template)
 
 TASKS:
 
-Aaron: 
+- Aaron: 
 Build the Home page. 
 
 Nov. 25 - Aaron
@@ -23,6 +23,10 @@ Added the photos to tops & bottoms.
 added google fonts to adhere to the psd design.
 edited the footer area. 
 *** The links are purple - It's annoying *** 
+trying to added a text-decoration 'line-through' color teal for the a: links
+remove unnessary margins and paddings
+the hover of the homepage is acting funny!!! :0!!!!!!!! 
+
 
 Kayla: 
 - Add logo area

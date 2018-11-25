@@ -44,15 +44,14 @@ body
 a:visited is for visited, and just a applies to both.*/
 /*a will also style anchor links*/
 
-a:link, a:visited 
-{ 
+a:link, a:visited{ 
 	color: #9b9b9b; /* This changes the links to gray */ 	
 	text-decoration:none; 	
 }
 
-a:hover, a:active 
-{ 
-	text-decoration:none; 
+a:hover, a:active{ 
+	text-decoration: none; 
+	color: #1c8ab6; /* Teal color change color on hover */
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -124,8 +123,16 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	display: inline;
 	margin-left: 30px;
 
-} 
+}
 
+
+/* hover navigation titles with line-through */
+
+#mainNav ul li a:hover{
+
+	text-decoration: line-through;
+
+}  
 
 #promo 
 {
@@ -154,22 +161,41 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 }
 
 
-/*Page 4 - tops gallery section */
+/* hover for tops iamges */
 
-.topsImage 
-{
+.topsImage{
+	
 /*	margin-left: 32px;*/
 	width: 439px;
 	height: 566px;
 }
 
+.topsImage:hover{
 
-/* Page 4 - bottoms gallery section */
-.bottomsImage 
-{
-	/*margin-right: 32px;*/
+	padding-top: 82px;
+	content: url('../images/home_page_tops_hover.jpg'); 
 	width: 439px;
 	height: 566px;
+}
+
+/* hover for bottom images */
+
+.bottomsImage{
+
+	/*margin-right: 32px;*/
+	padding-top: 0px;
+	width: 439px;
+	height: 566px;
+}
+
+
+.bottomsImage:hover{
+
+	padding-top: 82px;
+	content: url('../images/home_page_bottoms_hover.jpg'); 
+	width: 439px;
+	height: 566px;
+
 }
 
 /* TOPS & BOTTOMS section start */
@@ -178,8 +204,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	display: flex;
 	flex-direction: row;
   	justify-content: space-evenly;
-/*	border-bottom: solid 1px #DDD;
-*/	vertical-align: top;
+	vertical-align: top;
 	padding-bottom: 140px; /* not sure about this */ 
 /*	margin-top: 40px;
 */}
@@ -277,8 +302,8 @@ input{
 }
 
 
-#copyRight  
-{	
+#copyRight{
+
 	width: 380px;
 	height: 60px;
 	margin-top: 70px;
@@ -287,15 +312,14 @@ input{
 }
 
 
-#copyRight p 
-{	
+#copyRight p{	
 	font-size: 12px;
 	
 }
 
 /*Page 2 - Notice we are using one style sheet for all of the pages*/
 
-#contentCon {
+#contentCon{
 	margin-top: 40px;
 	border-bottom: solid 1px #DDD;
 	padding-bottom: 40px;
