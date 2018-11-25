@@ -4,6 +4,16 @@ Nov. 23 - Kayla
 
 Created folder structure + added scaffold flex (template)
 
+Nov. 24 - Kayla
+
+- Fixed Subscribe button typo
+- Fixed broken contact link
+- Closed copywright comment
+- Added logo (but still need to resize logo + add padding)
+- Deleted promoImageBig div id, replaced with promo section id
+- Deleted promoText
+- Added video tag + ids (still need to get rid of space at bottom + position)
+- Deleted promo p id
 
 ------------------------------------------------------------
 
@@ -11,6 +21,8 @@ TASKS:
 
 Kayla: 
 - Add logo area
+- Move mmed-1050 folder to images and rename all html image paths?
+- Add document outline
 
 Aaron: 
 - practice changing layout

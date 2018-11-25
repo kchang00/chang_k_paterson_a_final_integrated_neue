@@ -1,0 +1,347 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+/*p
+{
+	color: #fff;
+	line-height: 100px;
+	background: #000;
+	text-align: center;
+	margin: 0;
+}*/
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #000;
+	height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 960px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+/*	border-bottom: solid 1px #DDD;
+*/}
+
+/*This is a flex item*/
+
+#logoStatic
+{
+	position: absolute;
+	background: white url("../images/logo_static.svg") no-repeat;
+    height: 59px;
+    width: 300px;
+
+}
+
+#logoStatic:hover
+{
+	opacity: 0;
+}
+
+/*Add padding to prevent shifting + resize logo*/
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	margin-left: auto;
+	width: 500px;
+	margin-top: 56px;
+}
+
+
+/* Horizontal navigation titles and spacing the nav titles */
+#mainNav ul{
+	list-style-type: none;
+	padding: 0;
+
+}
+
+
+/* Horizontal navigation titles and spacing the nav titles */
+#mainNav ul li{
+	font-size: 14px;
+	display: inline;
+	margin-left: 30px;
+
+} 
+
+
+#promo 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	background-color: tomato;
+}
+
+/* video section */
+
+#promoVideo
+{
+	margin-left: auto;
+	width: 960px;
+	height: 450px;
+}
+
+
+/*Page 4 - tops gallery section */
+
+.topsImage 
+{
+	margin-left: 32px;
+	width: 439px;
+	height: 566px;
+}
+
+
+/* Page 4 - bottoms gallery section */
+.bottomsImage 
+{
+	margin-right: 32px;
+	width: 439px;
+	height: 566px;
+}
+
+/* TOPS & BOTTOMS section start */
+#productInfo 
+{
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-evenly;
+	border-bottom: solid 1px #DDD;
+	vertical-align: top;
+	padding-bottom: 40px;
+	margin-top: 40px;
+}
+
+
+/* TOPS & BOTTOMS Titles */
+#productInfo h2{
+
+	font-size: 30px;
+	color: #9b9b9b;
+	background-color: #ddeff7;
+	width: 439px;
+	margin-bottom: 40px;
+
+}
+
+#topsTitle{
+
+	background-color: red;
+
+}
+
+/* Footer  Beginning */
+#mainFooter 
+{  	
+	height: 450px;
+/*	margin-top: 40px;
+	margin-bottom: 40px;*/
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+.footerNav{
+
+	font-size: 25px;
+
+}
+
+
+.footerNav li{
+
+	list-style-type: none;
+	line-height: 35px;
+}
+
+/* newsletter styling */
+.newsLetter{
+	margin-right: 40px;
+	margin-left: auto;
+	width: 480px;
+	height: 155px;
+}
+
+/* Specific selector for spacing the product & titles */
+.newsLetter h3 {
+
+	font-size: 40px;
+	padding: 0;
+}
+
+/* point size for newsletter */
+.newsletter h3, p{
+	
+	font-size: 16px;
+	padding: 0px;
+}
+
+.newsLetter p{
+	line-height:25px;
+}
+/* stling the form */
+input{
+
+	display: block;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	border: 1px solid #efefef;
+	background-color: #efefef;
+}
+
+.submit{
+	height: 35px;
+	width: 75px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #666;
+	color: #fff;
+	border: none;
+}
+
+
+#copyRight 
+{	
+	width: 380px;
+	margin-top: 435px;
+	height: 20px;
+	background-color: #555;
+	
+}
+
+/*Page 2 - Notice we are using one style sheet for all of the pages*/
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+#contentCon p 
+{
+	line-height: 630px;
+}
+
+#content1 
+{
+	width: 440px;
+}
+
+#content2 
+{
+	margin-left: auto;
+	width: 440px;
+}
+
+/*Page 3*/
+
+/*#productImages 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}*/
+
+/*Get rid of this, here just to give different height*/
+#productImages p
+{
+	line-height: 250px;
+}
+
+.productImg 
+{
+	width: 280px;
+}
+
+#contentAreaBig
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+}
+
+
+
