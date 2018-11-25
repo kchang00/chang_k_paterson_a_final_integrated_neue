@@ -14,6 +14,8 @@ Nov. 24 - Kayla
 - Deleted promoText
 - Added video tag + ids (still need to get rid of space at bottom + position)
 - Deleted promo p id
+- Edited PSD skins + added to assets
+- Renamed some images
 
 ------------------------------------------------------------
 
