@@ -17,6 +17,11 @@ Nov. 24 - Kayla
 - Edited PSD skins + added to assets
 - Renamed some images
 
+Nov. 25 - Kayla
+
+- Resized logo (made gif lose quality?)
+- Updated logos.ai in assets
+
 ------------------------------------------------------------
 
 TASKS:
