@@ -22,14 +22,21 @@ Nov. 25 - Kayla
 - Resized logo (made gif lose quality?)
 - Updated logos.ai in assets
 
+Nov. 26 - Kayla
+
+- Started layout for gallery
+- Linked logo on gallery and home to index.html
+- Resized logo to PSD (300px x 59px to 167px x 32px - too small?)
+
 ------------------------------------------------------------
 
 TASKS:
 
 Kayla: 
-- Add logo area
-- Move mmed-1050 folder to images and rename all html image paths?
+- Fix weird padding on gallery filter
+- Finish filter (dropdown menus with CSS?)
 - Add document outline
+- Fix weird placement of images because of position:absolute...
 
 Aaron: 
 - practice changing layout

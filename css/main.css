@@ -96,14 +96,19 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 {
 	position: absolute;
 	background: white url("../images/logo_static.svg") no-repeat;
-    height: 59px;
-    width: 300px;
-
+    height: 32px;
+    width: 167px;
 }
 
 #logoStatic:hover
 {
 	opacity: 0;
+}
+
+#logoHover img
+{
+	height: 32px;
+	width: 167px;
 }
 
 /*Add padding to prevent shifting + resize logo*/
@@ -134,6 +139,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 } 
 
+/* Homepage */
 
 #promo 
 {
@@ -204,7 +210,8 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 }
 
-/* Footer  Beginning */
+/* Footer */
+
 #mainFooter 
 {  	
 	height: 450px;
@@ -343,5 +350,53 @@ input{
 	padding-bottom: 40px;
 }
 
+/* Gallery Page */
 
+#galleryFilter
+{
+	background-color: #eff1fd;
+	height: 210px;
+	padding: 1px 1px 1px 1px;
+}
+
+#galleryFilter h1
+{
+	font-size: 50px;
+}
+
+#galleryFilter p
+{
+	width: 623px;
+}
+
+#galleryImages
+{
+	margin-bottom: 28px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+/*	background-color: blue;*/
+
+}
+
+.galleryRow
+{
+
+	margin-top: 28px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+/* 	background-color: tomato;*/
+}
+
+
+.galleryImgStatic 
+{
+	position: absolute;
+}
+
+.galleryImgStatic:hover 
+{
+	opacity: 0;
+}
 
