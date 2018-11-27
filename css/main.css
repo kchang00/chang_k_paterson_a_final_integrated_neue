@@ -51,6 +51,7 @@ a:link, a:visited
 a:hover, a:active 
 { 
 	text-decoration:none; 
+	cursor: pointer;
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -354,9 +355,11 @@ input{
 
 #galleryFilter
 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 	background-color: #eff1fd;
 	height: 210px;
-	padding: 1px 1px 1px 1px;
 }
 
 #galleryFilter h1
@@ -367,6 +370,25 @@ input{
 #galleryFilter p
 {
 	width: 623px;
+}
+
+#galleryFilterNav
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#galleryFilterNav ul li
+{
+	list-style-type: none;
+	display: inline;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.galleryFilterButton
+{
+	width: 20px;
 }
 
 #galleryImages

@@ -27,6 +27,8 @@ Nov. 26 - Kayla
 - Started layout for gallery
 - Linked logo on gallery and home to index.html
 - Resized logo to PSD (300px x 59px to 167px x 32px - too small?)
+- Modified Filter
+- Made icons
 
 ------------------------------------------------------------
 
@@ -37,6 +39,8 @@ Kayla:
 - Finish filter (dropdown menus with CSS?)
 - Add document outline
 - Fix weird placement of images because of position:absolute...
+- Fix filter (make it into a flex element?? + add buttons)
+- see https://spectrum.chat/frontend/questions/how-do-you-align-svg-icons-to-text~56ae9412-376c-4b38-9fbc-41208b656796
 
 Aaron: 
 - practice changing layout
