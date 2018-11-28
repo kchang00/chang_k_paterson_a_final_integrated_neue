@@ -12,6 +12,7 @@ TASKS:
 - Aaron: 
 Build the Home page. 
 
+
 Nov. 28 - Aaron 
 
 Amend spacing issues on the home page.
@@ -32,7 +33,7 @@ edited the footer area.
 *** The links are purple - It's annoying *** 
 trying to added a text-decoration 'line-through' color teal for the a: links
 remove unnessary margins and paddings
-the hover of the homepage is acting funny!!! :0!!!!!!!! 
+the hover of the homepage is acting funny!!! 
 
 
 Kayla: 
