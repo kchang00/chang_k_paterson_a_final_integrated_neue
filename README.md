@@ -33,6 +33,7 @@ Nov. 26 - Kayla
 Nov. 28 - Kayla
 - Fixed gallery layout
 - Updated home psd
+- merging to master
 
 ------------------------------------------------------------
 
