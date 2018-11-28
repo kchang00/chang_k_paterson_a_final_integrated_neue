@@ -1,0 +1,477 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{	
+	font-family: 'Barlow Condensed', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited{ 
+	color: #9b9b9b; /* This changes the links to gray */ 	
+	text-decoration:none; 	
+}
+
+a:hover, a:active{ 
+	text-decoration: none; 
+	color: #1c8ab6; /* Teal color change color on hover */
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+/*#topBar
+{	font-family: 
+	background-color: #000;
+	height: 20px;
+}*/
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 960px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+/* This the yellow bulb on the top of the logo */
+#yellowBulb{
+	top: 0px;
+	position: absolute;
+
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	margin-top: 40px;
+	padding-bottom: 10px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	margin-left: auto;
+	width: 524px;
+	margin-top: 56px;
+}
+
+
+/* Horizontal navigation titles and spacing the nav titles */
+#mainNav ul{
+
+	list-style-type: none;
+	padding: 0;
+
+}
+
+
+/* Horizontal navigation titles and spacing the nav titles */
+#mainNav ul li{
+
+	letter-spacing: .071em;
+	font-size: 16px;
+	display: inline;
+	margin-left: 30px;
+
+}
+
+
+/* hover navigation titles with line-through */
+
+#mainNav ul li a:hover{
+
+	text-decoration: line-through;
+
+}  
+
+#promo 
+{
+	margin-top: 40px;
+	padding-bottom: 0px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+#promo p 
+{
+	line-height: 250px;
+}
+
+#promoText 
+{
+	width: 600px;
+}
+
+#promoImage 
+{
+	margin-left: auto;
+	width: 280px;
+}
+
+/* Tops title */
+#topsTitle{
+	
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 60px;
+	font-weight: 600;
+	color: #9b9b9b;
+	width: 439px;
+	margin-bottom: 10px
+}
+
+/* hover for tops images */
+
+.topsImage{
+
+/*	margin-left: 32px;*/
+	width: 439px;
+	height: 566px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* hover */
+/*.topsImage:hover{
+	content: url('../images/home_page_tops_hover.jpg'); 
+	width: 439px;
+	height: 566px;
+}
+*/
+#bottomsTitle{
+	
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 60px;
+	font-weight: 600;
+	color: #9b9b9b;
+	width: 439px;
+	margin-bottom: 10px;
+}
+
+/* hover for bottom images */
+.bottomsImage{
+
+	/*margin-right: 32px;*/
+	width: 439px;
+	height: 566px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* hover */
+/*.bottomsImage:hover{
+
+	padding-top: 82px;
+	content: url('../images/home_page_bottoms_hover.jpg'); 
+	width: 439px;
+	height: 566px;
+
+}*/
+
+/* TOPS & BOTTOMS section start */
+#productInfo 
+{
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-evenly;
+	vertical-align: top;
+	margin-bottom: 229px; /* move the footer down */ 
+	margin-top: 0px;
+}
+
+
+/* TOPS & BOTTOMS title font change */
+/*#productInfo{
+
+	width: 439px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+*/
+
+
+/* Footer Beginning */
+#mainFooter {  	
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	height: 415px;
+}
+ 
+.footerNav{
+
+	font-family: 'Barlow Condensed', sans-serif;
+	letter-spacing: 0.04em;
+	margin-top: 11px; 
+	margin-left: 61px; /* move over a little from the left*/
+	font-size: 30px;
+
+
+}
+
+
+.footerNav li{	
+	text-decoration-style: none;
+	color: #9b9b9b;
+	list-style-type: none;
+	line-height: 35px;
+}
+
+/* newsletter styling */
+.newsLetter{
+
+	margin-right: 0px;
+	margin-left: auto;
+	width: 430px;
+	height: 155px;
+}
+
+/* Specific selector for the newsletter title */
+.newsLetter h3 {
+
+	color:#d3356a;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 600;
+	font-size: 40px;
+	padding: 0;
+}
+
+/* point size for newsletter */
+.newsletter h3, p{
+	
+	font-size: 16px;
+	padding: 0px;
+}
+
+.newsLetter p{
+	line-height:25px;
+}
+
+
+/* stling the form */
+input{
+
+	display: block;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	border: 1px solid #efefef;
+	background-color: #efefef;
+}
+
+.submit{
+	height: 35px;
+	width: 75px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #666;
+	color: #fff;
+	border: none;
+}
+
+
+#copyRight{
+
+	width: 380px;
+	height: 60px;
+	margin-top: 70px;
+	height: 20px;
+
+}
+
+
+#copyRight p{	
+	font-size: 12px;
+	
+}
+
+/* Footer teal and magenta bulb */
+#tealBulb{
+	
+	position:absolute;
+	right: 388px;
+	bottom: 0px;
+	z-index: -1;
+
+
+}
+
+
+
+/* Page 2 - Notice we are using one style sheet for all of the pages */
+
+#contentCon{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/* Get rid of this, here just to give different height to promo */
+#contentCon p 
+{
+	line-height: 630px;
+}
+
+#content1 
+{
+	width: 440px;
+}
+
+#content2 
+{
+	margin-left: auto;
+	width: 440px;
+}
+
+/* Get rid of this, here just to give different height */
+#productImages p
+{
+	line-height: 250px;
+}
+
+.productImg 
+{
+	width: 280px;
+}
+
+#contentAreaBig
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+}
+
+/* This is the video section */
+
+#promoImageBig
+{	
+	text-align: center;
+	background-color: tomato;
+	height: 400px;
+	width: 960px;
+}
+
+/**** Start of Contact Us section ****/
+
+#mainContact{
+
+	width: 960px;
+	padding-top: 20px;
+	/*padding-left: 20px;
+	padding-right: 20px;*/
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+}
+
+/* Contact Us Titles */
+
+#mainContact h2{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 60px;
+	color: #2073a8;
+	padding: 8px 0px 8px 5px;  /* trbl*/
+	width: 960px;
+	margin-bottom: 40px;
+	color: #9b9b9b;
+}
+
+/* estbalishing the border in the middle */
+#contactArea{
+
+	width: 450px;
+	border-left: solid 1px #ccc;
+	margin-bottom: 30px;
+	padding-left: 60px;
+}
+
+#contactText{
+	font-weight: bold;
+	font-size: 41px;
+	margin-bottom: 30px;
+	width: 473px;
+}
+
+input, textarea{
+
+	display: block;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	border: 1px solid #999;
+	background-color: #efefef;
+}
+
+#comments{
+
+	width: 360px;
+	height: 200px;
+}
+
+
+#submit{
+
+	width: 75px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	background-color: #2073a8;
+	color: #fff;
+	border: solid 1px #003471;
+}
+
+#listCat{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
