@@ -391,24 +391,69 @@ input{
 	width: 20px;
 }
 
+<<<<<<< HEAD
+/* gallery grid start */
+
+#galleryImages
+=======
 #galleryImagesStatic
+>>>>>>> 1de15f8836be7de386cab2583084f464c9e5b324
 {
 	margin-bottom: 28px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+<<<<<<< HEAD
+	width: 960px;
+	height: 1000px;
+}
+
+.galleryRow
+=======
 /*	position: absolute;*/
 /*	background-color: blue;*/
 
 }
 
 .galleryRowStatic
+>>>>>>> 1de15f8836be7de386cab2583084f464c9e5b324
 {
 
 	margin-top: 28px;
 	display: flex;
 	flex-direction: row;
   	justify-content: space-between;
+<<<<<<< HEAD
+  	width: 960px;
+  	height: 500px;
+}
+
+.galleryWrap /* makes img participate in flex layout */
+{
+	position: relative;
+}
+
+/* gallery grid end */
+
+.galleryImgStatic
+{
+	position: relative;
+/*	top: 0;
+	left: 0;*/
+}
+
+.galleryImgStatic:hover 
+{
+	opacity: 0;
+	position: relative;
+}
+
+.galleryImgRollover
+{
+	position: absolute;
+/*	top: 0;
+	left: 0;*/
+=======
 /* 	background-color: tomato;*/
 }
 
@@ -435,6 +480,7 @@ input{
 	flex-direction: row;
   	justify-content: space-between;
 /* 	background-color: tomato;*/
+>>>>>>> 1de15f8836be7de386cab2583084f464c9e5b324
 }
 
 .galleryText
