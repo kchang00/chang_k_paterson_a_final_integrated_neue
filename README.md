@@ -30,6 +30,10 @@ Nov. 26 - Kayla
 - Modified Filter
 - Made icons
 
+Nov. 28 - Kayla
+- Fixed gallery layout
+- Updated home psd
+
 ------------------------------------------------------------
 
 TASKS:
