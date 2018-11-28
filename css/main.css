@@ -1,18 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*Remove this rule, this is only for demo purposes to make the boxes black with white text
-The line height on the <p> tag gives each box a height value*/
-
-/*p
-{
-	color: #fff;
-	line-height: 100px;
-	background: #000;
-	text-align: center;
-	margin: 0;
-}*/
-
 /*basic reset*/
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
 
@@ -62,11 +50,11 @@ a:hover, a:active{
 }
 
 /*section is block level and no width specidied therefore stretches full screen*/
-#topBar
+/*#topBar
 {	font-family: 
 	background-color: #000;
 	height: 20px;
-}
+}*/
 
 /*Site Container*/
 /*This is essentially a box that we place the whole site in.  
@@ -78,6 +66,13 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 960px;
 	padding-left: 20px;
 	padding-right: 20px;
+
+}
+/* This the yellow bulb on the top of the logo */
+#yellowBulb{
+	top: 0px;
+	position: absolute;
+
 }
 
 /*This is a flex container*/
@@ -88,12 +83,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
   	justify-content: flex-start;
   	margin-top: 40px;
 	padding-bottom: 10px;
-}
-
-/*This is a flex item*/
-#logo
-{
-	width: 200px;
 }
 
 /*This is also a flex item*/
@@ -137,7 +126,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #promo 
 {
 	margin-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 0px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
@@ -160,43 +149,64 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 280px;
 }
 
+/* Tops title */
+#topsTitle{
+	
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 60px;
+	font-weight: 600;
+	color: #9b9b9b;
+	width: 439px;
+	margin-bottom: 10px
+}
 
-/* hover for tops iamges */
+/* hover for tops images */
 
 .topsImage{
-	
+
 /*	margin-left: 32px;*/
 	width: 439px;
 	height: 566px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-.topsImage:hover{
-
-	padding-top: 82px;
+/* hover */
+/*.topsImage:hover{
 	content: url('../images/home_page_tops_hover.jpg'); 
 	width: 439px;
 	height: 566px;
 }
+*/
+#bottomsTitle{
+	
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 60px;
+	font-weight: 600;
+	color: #9b9b9b;
+	width: 439px;
+	margin-bottom: 10px;
+}
 
 /* hover for bottom images */
-
 .bottomsImage{
 
 	/*margin-right: 32px;*/
-	padding-top: 0px;
 	width: 439px;
 	height: 566px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-
-.bottomsImage:hover{
+/* hover */
+/*.bottomsImage:hover{
 
 	padding-top: 82px;
 	content: url('../images/home_page_bottoms_hover.jpg'); 
 	width: 439px;
 	height: 566px;
 
-}
+}*/
 
 /* TOPS & BOTTOMS section start */
 #productInfo 
@@ -205,22 +215,19 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	flex-direction: row;
   	justify-content: space-evenly;
 	vertical-align: top;
-	padding-bottom: 140px; /* not sure about this */ 
-/*	margin-top: 40px;
-*/}
+	margin-bottom: 229px; /* move the footer down */ 
+	margin-top: 0px;
+}
 
 
 /* TOPS & BOTTOMS title font change */
-#productInfo h2{
+/*#productInfo{
 
-	font-family: 'Barlow Condensed', sans-serif;
-	font-size: 60px;
-	font-weight: 600;
-	color: #9b9b9b;
 	width: 439px;
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
+*/
 
 
 /* Footer Beginning */
@@ -228,7 +235,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
-  	height: 426px;
+  	height: 415px;
 }
  
 .footerNav{
@@ -236,7 +243,9 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	font-family: 'Barlow Condensed', sans-serif;
 	letter-spacing: 0.04em;
 	margin-top: 11px; 
+	margin-left: 61px; /* move over a little from the left*/
 	font-size: 30px;
+
 
 }
 
@@ -317,7 +326,20 @@ input{
 	
 }
 
-/*Page 2 - Notice we are using one style sheet for all of the pages*/
+/* Footer teal and magenta bulb */
+#tealBulb{
+	
+	position:absolute;
+	right: 388px;
+	bottom: 0px;
+	z-index: -1;
+
+
+}
+
+
+
+/* Page 2 - Notice we are using one style sheet for all of the pages */
 
 #contentCon{
 	margin-top: 40px;
@@ -328,7 +350,7 @@ input{
   	justify-content: flex-start;
 }
 
-/*Get rid of this, here just to give different height to promo*/
+/* Get rid of this, here just to give different height to promo */
 #contentCon p 
 {
 	line-height: 630px;
@@ -345,7 +367,7 @@ input{
 	width: 440px;
 }
 
-/*Get rid of this, here just to give different height*/
+/* Get rid of this, here just to give different height */
 #productImages p
 {
 	line-height: 250px;
@@ -364,6 +386,7 @@ input{
 }
 
 /* This is the video section */
+
 #promoImageBig
 {	
 	text-align: center;
@@ -372,5 +395,83 @@ input{
 	width: 960px;
 }
 
+/**** Start of Contact Us section ****/
+
+#mainContact{
+
+	width: 960px;
+	padding-top: 20px;
+	/*padding-left: 20px;
+	padding-right: 20px;*/
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+}
+
+/* Contact Us Titles */
+
+#mainContact h2{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 60px;
+	color: #2073a8;
+	padding: 8px 0px 8px 5px;  /* trbl*/
+	width: 960px;
+	margin-bottom: 40px;
+	color: #9b9b9b;
+}
+
+/* estbalishing the border in the middle */
+#contactArea{
+
+	width: 450px;
+	border-left: solid 1px #ccc;
+	margin-bottom: 30px;
+	padding-left: 60px;
+}
+
+#contactText{
+	font-weight: bold;
+	font-size: 41px;
+	margin-bottom: 30px;
+	width: 473px;
+}
+
+input, textarea{
+
+	display: block;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	border: 1px solid #999;
+	background-color: #efefef;
+}
+
+#comments{
+
+	width: 360px;
+	height: 200px;
+}
 
 
+#submit{
+
+	width: 75px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	background-color: #2073a8;
+	color: #fff;
+	border: solid 1px #003471;
+}
+
+#listCat{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}

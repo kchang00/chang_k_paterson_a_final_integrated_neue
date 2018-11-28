@@ -12,6 +12,13 @@ TASKS:
 - Aaron: 
 Build the Home page. 
 
+Nov. 28 - Aaron 
+
+Amend spacing issues on the home page.
+Added the Contact page.
+Add the Bulbs on top on the page and bottom. 
+
+
 Nov. 25 - Aaron
 
 From Start: 
