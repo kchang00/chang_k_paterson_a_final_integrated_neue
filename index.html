@@ -4,11 +4,13 @@
 <meta charset="UTF-8">
 <title>Neue | Home</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:600|Poppins" rel="stylesheet">
 </head>
 <body>
 	<section id="topBar"></section><!--end topBar-->
 
 	<div id="siteContainer">
+        <div id="yellowBulb"><img src="images/yellow_bulb.jpg" alt="yellowBulb" id="yellow">
     	<header id="mainHeader">
             <a href="index.html">
                 <div id="logoStatic"></div>
@@ -20,6 +22,7 @@
             <nav id="mainNav">
                     <h2 class="hidden">Main Navigation</h2>
                     <ul>
+
                         <li><a href="#">NEW ARRIVALS</a></li>
                         <li><a href="gallery.html">CLOTHING</a></li>
                         <li><a href="#">BLOG</a></li>
@@ -39,17 +42,22 @@
         </section><!--end promo-->
 
         <!-- Start TOPS & BOTTOMS  -->
+
         <section id="productInfo">
-            <h2 class="hidden">TOPS & BOTTOMS</h2>
+        	<section class="topsImage">
             <h2 id="topsTitle">TOPS</h2>
-        	<section class="topsImage"><img src="images/home_page_tops_static.jpg" alt="green_tiger_jacket" width="439" height="566" id="tops"></section><!--end TOPS & BOTTOMS-->
+                <img src="images/home_page_tops_static.jpg" alt="green_tiger_jacket" width="439" height="566" id="tops">
+            </section><!--end TOPS-->
+
+            <section class="bottomsImage">
             <h2 id="bottomsTitle">BOTTOMS</h2>
-            <section class="bottomsImage"><img src="images/home_page_bottoms_static.jpg" alt="leather_jacket" width="439" height="566" id="bottoms"></section><!--end TOPS & BOTTOMS-->
+                <img src="images/home_page_bottoms_static.jpg" alt="leather_jacket" width="439" height="566" id="bottoms">
+            </section><!--end BOTTOMS-->
         </section><!--end productInfo-->
 
         <footer id="mainFooter">
             <nav class="footerNav">
-                  <h2 class="hidden">Footer Navigation</h2>
+            <h2 class="hidden">Footer Navigation</h2>
                     <ul>
                         <li><a href="#">NEW ARRIVALS</a></li>
                           <li><a href="gallery.html">CLOTHING</a></li>
@@ -62,17 +70,19 @@
             </nav>
 
             <div class="newsLetter">
-                    <h3>JOIN OUR NEWSLETTER</h3>
-                    <p>Sign up for email updates on the latest Neue collection, campaigns and videos.</p>
-                    <!-- subcribe form input -->
-                    <form action="form.php" method="POST" autocomplete="off">
-                    <input class="text" type="text" required id="name" placeholder="Enter your email" size="30" name="email"/>
-                    <input class="submit" type="submit" name="Subscribe" value="Subscribe"/>
-                    </form><!--end form-->
-            </div>
-             <!-- <div id="copyRight"> <p>Neue Clothing Terms & Conditions</p></div> --><!--end Copyright -->
-        </footer><!--end mainFooter-->
-    </div><!--end siteContainer-->
+            <h3>JOIN OUR NEWSLETTER</h3>
+                    <p>Sign up for email updates on the latest Neue collection, 
+                    campaigns and videos.</p>
+                        <!-- subcribe form input -->
+                        <form action="form.php" method="POST" autocomplete="off">
+                            <input class="text" type="text" required id="name" placeholder="Enter your Email" size="30" name="email"/>
+                            <input class="submit" type="submit" name="Subscribe" value="Subcribe"/>
+                        </form><!--end form-->
+                <div id="copyRight"><p>© 2019 Neue Clothing. All Rights Reserved</p></div> 
+                    <!-- end copyright -->
+                <div id="tealBulb"> <img src="images/teal_bulb.jpg" alt=" tealBulb" id="teal"></div>
+        </footer> <!-- main footer end -->
+    </div><!--end siteContainer --> 
 <script src="js/main.js"></script>    
 </body>
 </html>
