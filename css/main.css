@@ -53,14 +53,6 @@ a:hover, a:active
 	display: none;
 }
 
-/*section is block level and no width specified therefore stretches full screen*/
-/*#topBar
-{	
-	background-color: #000;
-	height: 20px;
-}
-*/
-
 /*Site Container*/
 /*We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px 
 (960px) so it fits on 1024x768 screens.*/
@@ -99,6 +91,7 @@ a:hover, a:active
 {
 	position: absolute;
 	background: white url("../images/logo_static.svg") no-repeat;
+    margin-top: 60px;
     height: 32px;
     width: 167px;
 }
@@ -108,8 +101,9 @@ a:hover, a:active
 	opacity: 0;
 }
 
+/* This is the logo hover */
 #logoHover img
-{
+{	margin-top: 60px;
 	height: 32px;
 	width: 167px;
 }
@@ -155,12 +149,11 @@ a:hover, a:active
 #promo 
 {
 	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+/*	padding-bottom: 40px;*/
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
-  	background-color: tomato;
+
 }
 
 /* video section */
@@ -169,7 +162,10 @@ a:hover, a:active
 {
 	margin-left: auto;
 	width: 960px;
-	height: 450px;
+	height: 540px;
+	border:none; 
+	background:transparent; 
+	overflow:hidden;
 }
 
 /* TOPS & BOTTOMS section start */
@@ -179,10 +175,10 @@ a:hover, a:active
 	display: flex;
 	flex-direction: row;
   	justify-content: space-evenly;
-	border-bottom: solid 1px #DDD;
 	vertical-align: top;
 	padding-bottom: 40px;
-	margin-top: 40px;
+	margin-top: 10px;
+	margin-bottom: 152px;
 }
 
 
@@ -192,24 +188,18 @@ a:hover, a:active
 
 #productInfo h2
 {
-
-	font-size: 30px;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 60px;
 	color: #9b9b9b;
-	background-color: #ddeff7;
 	width: 439px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 /* Tops title */
 
 #topsTitle
 {
-	font-family: 'Barlow Condensed', sans-serif;
-	font-size: 60px;
-	font-weight: 600;
-	color: #9b9b9b;
-	width: 439px;
-	margin-bottom: 10px
+
 }
 
 /* hover for tops images */
@@ -233,12 +223,7 @@ a:hover, a:active
 
 #bottomsTitle
 {
-	font-family: 'Barlow Condensed', sans-serif;
-	font-size: 60px;
-	font-weight: 600;
-	color: #9b9b9b;
-	width: 439px;
-	margin-bottom: 10px;
+
 }
 
 /* hover for bottom images */
@@ -364,7 +349,7 @@ input{
 {
 	
 	position:absolute;
-	right: 388px;
+	right: 470px;
 	bottom: 0px;
 	z-index: -1;
 }
@@ -508,7 +493,7 @@ input{
 
 #mainContact{
 
-	width: 960px;
+	width: 920px;
 	padding-top: 20px;
 	/*padding-left: 20px;
 	padding-right: 20px;*/
@@ -526,7 +511,7 @@ input{
 	font-size: 60px;
 	color: #2073a8;
 	padding: 8px 0px 8px 5px;  /* trbl*/
-	width: 960px;
+	width: 920px;
 	margin-bottom: 40px;
 	color: #9b9b9b;
 }
@@ -535,7 +520,6 @@ input{
 #contactArea{
 
 	width: 450px;
-	border-left: solid 1px #ccc;
 	margin-bottom: 30px;
 	padding-left: 60px;
 }

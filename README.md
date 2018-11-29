@@ -1,5 +1,13 @@
 # final_integrated_neue
 
+
+Nov 28 - Aaron
+- fixed the logo positioning
+- fixed footer margin
+- fixed height in the 'top' and 'bottoms' tag
+- validate/outline index and contact sheets
+
+
 Nov. 28 - Kayla
 - Fixed gallery layout
 - Updated home psd
