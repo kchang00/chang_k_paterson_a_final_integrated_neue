@@ -5,7 +5,7 @@
 /*basic reset*/
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
 
-/* need ul and ol for gallery filter */
+/* need ul and ol for gallery filter! */
 
 div,p,body,header,footer,section,article,nav, ul, ol 
 { 
@@ -150,7 +150,7 @@ a:hover, a:active
 	text-decoration: line-through;
 }  
 
-/* Homepage */
+/***** Homepage *****/
 
 #promo 
 {
@@ -262,128 +262,7 @@ a:hover, a:active
 
 }*/
 
-/* Footer Beginning*/
-
-#mainFooter 
-{  	
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-  	height: 415px;
-}
-
-.footerNav
-{
-
-	font-family: 'Barlow Condensed', sans-serif;
-	letter-spacing: 0.04em;
-	margin-top: 11px; 
-	margin-left: 61px; /* move over a little from the left*/
-	font-size: 30px;
-}
-
-
-.footerNav li
-{	
-	text-decoration-style: none;
-	color: #9b9b9b;
-	list-style-type: none;
-	line-height: 35px;
-}
-
-/* newsletter styling */
-.newsLetter
-{
-	margin-right: 40px;
-	margin-left: auto;
-	width: 480px;
-	height: 155px;
-}
-
-/* Specific selector for the newsletter title */
-.newsLetter h3 
-{
-	color:#d3356a;
-	font-family: 'Barlow Condensed', sans-serif;
-	font-weight: 600;
-	font-size: 40px;
-	padding: 0;
-}
-
-/* point size for newsletter */
-.newsletter h3, p
-{
-	font-size: 16px;
-	padding: 0px;
-}
-
-.newsLetter p
-{
-	line-height:25px;
-}
-
-/* styling the form */
-input{
-
-	display: block;
-	padding: 10px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	width: 300px;
-	border: 1px solid #efefef;
-	background-color: #efefef;
-}
-
-.submit{
-	height: 35px;
-	width: 75px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background-color: #666;
-	color: #fff;
-	border: none;
-}
-
-#copyRight
-{
-	width: 380px;
-	height: 60px;
-	margin-top: 70px;
-	height: 20px;
-}
-
-
-#copyRight p
-{	
-	font-size: 12px;
-}
-
-/* Footer teal and magenta bulb */
-
-#tealBulb
-{
-	
-	position:absolute;
-	right: 388px;
-	bottom: 0px;
-	z-index: -1;
-}
-
-/*#contentCon{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-}
-
-#contentCon p 
-{
-	line-height: 630px;
-}*/
-
-/* Gallery Page */
+/***** Gallery Page *****/
 
 #galleryFilterContainer
 {
@@ -517,7 +396,7 @@ input{
 	line-height: 40px;
 }
 
-/**** Start of Contact Us section ****/
+/***** Start of Contact Us section *****/
 
 #mainContact{
 
@@ -597,3 +476,125 @@ input, textarea{
 	flex-direction: row;
 	justify-content: flex-start;
 }
+
+
+/***** Footer Beginning *****/
+
+#mainFooter 
+{  	
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	height: 415px;
+}
+
+.footerNav
+{
+
+	font-family: 'Barlow Condensed', sans-serif;
+	letter-spacing: 0.04em;
+	margin-top: 11px; 
+	margin-left: 61px; /* move over a little from the left*/
+	font-size: 30px;
+}
+
+
+.footerNav li
+{	
+	text-decoration-style: none;
+	color: #9b9b9b;
+	list-style-type: none;
+	line-height: 35px;
+}
+
+/* newsletter styling */
+.newsLetter
+{
+	margin-right: 40px;
+	margin-left: auto;
+	width: 480px;
+	height: 155px;
+}
+
+/* Specific selector for the newsletter title */
+.newsLetter h3 
+{
+	color:#d3356a;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 600;
+	font-size: 40px;
+	padding: 0;
+}
+
+/* point size for newsletter */
+.newsletter h3, p
+{
+	font-size: 16px;
+	padding: 0px;
+}
+
+.newsLetter p
+{
+	line-height:25px;
+}
+
+/* styling the form */
+input{
+
+	display: block;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	border: 1px solid #efefef;
+	background-color: #efefef;
+}
+
+.submit{
+	height: 35px;
+	width: 75px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #666;
+	color: #fff;
+	border: none;
+}
+
+#copyRight
+{
+	width: 380px;
+	height: 60px;
+	margin-top: 70px;
+	height: 20px;
+}
+
+
+#copyRight p
+{	
+	font-size: 12px;
+}
+
+/* Footer teal and magenta bulb */
+
+#tealBulb
+{
+	
+	position:absolute;
+	right: 388px;
+	bottom: 0px;
+	z-index: -1;
+}
+
+/*#contentCon{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#contentCon p 
+{
+	line-height: 630px;
+}*/
