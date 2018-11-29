@@ -3,8 +3,10 @@
 Nov. 28 - Kayla
 - Fixed gallery layout
 - Updated home psd
-- merging to master
-- updated assets
+- Merging to master
+- Updated assets
+- Updated gallery
+- Modified Fliter
 
 Nov. 28 - Aaron 
 
@@ -65,8 +67,5 @@ TASKS:
 Build the Home page. 
 
 Kayla: 
-- Fix weird padding on gallery filter
 - Finish filter (dropdown menus with CSS?)
 - Add document outline
-- Fix filter (make it into a flex element?? + add buttons)
-- see https://spectrum.chat/frontend/questions/how-do-you-align-svg-icons-to-text~56ae9412-376c-4b38-9fbc-41208b656796

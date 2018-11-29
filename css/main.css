@@ -5,7 +5,9 @@
 /*basic reset*/
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
 
-div,p,body,header,footer,section,article,nav 
+/* need ul and ol for gallery filter */
+
+div,p,body,header,footer,section,article,nav, ul, ol 
 { 
 	margin: 0; 
 	padding: 0; 
@@ -27,7 +29,6 @@ body
 	font-size: 12px;
 	color: #333;
 }
-
 
 /*a:link is for not visited(standard unclicked link), 
 a:visited is for visited, and just a applies to both.*/
@@ -77,7 +78,6 @@ a:hover, a:active
 #yellowBulb
 {
 	top: 0px;
-	position: absolute;
 }
 
 /*This is a flex container*/
@@ -385,42 +385,48 @@ input{
 
 /* Gallery Page */
 
-#galleryFilter
+#galleryFilterContainer
 {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	background-color: #eff1fd;
-	height: 210px;
+	padding: 0px 0px 20px 30px;
 }
 
-#galleryFilter h1
+#galleryFilterContainer h1
 {
+	font-family: 'Barlow Condensed', sans-serif;
 	font-size: 50px;
+	font-weight: 600;
+	color: #9b9b9b;
+	margin-bottom: 40px
 }
 
-#galleryFilter p
+#galleryFilterContainer p
 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 17px;
+	line-height: 26px;
+	color: #333;
 	width: 623px;
+	margin-bottom: 30px;
 }
 
-#galleryFilterNav
-{
-	display: flex;
-	flex-direction: row;
-}
-
-#galleryFilterNav ul li
+#galleryFilter ul li
 {
 	list-style-type: none;
 	display: inline;
 	font-size: 15px;
 	font-weight: bold;
+	cursor: pointer;
 }
 
-.galleryFilterButton
+.filterArrow
 {
-	width: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	cursor: pointer;
 }
 
 /* gallery grid start */
@@ -433,7 +439,7 @@ input{
 	flex-direction: column;
 	justify-content: space-between;
 	width: 960px;
-	height: 1000px;
+	height: 1340px;
 }
 
 .galleryRow
@@ -444,7 +450,7 @@ input{
 	flex-direction: row;
   	justify-content: space-between;
   	width: 960px;
-  	height: 500px;
+  	height: 670px;
 }
 
 .galleryWrap /* makes img participate in flex layout */
@@ -479,15 +485,22 @@ input{
 	opacity: 0;
 }
 
+.galleryTextRow
+{
+
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+  	height: 210px;
+}
+
 .galleryText
 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-top: 28px;
+	margin-top: 20px;
 	padding-bottom: 40px;
 	border-bottom: 3px #1c8ab6 solid;
 	text-align: left;
+	width: 240px;
 }
 
 .galleryNew
