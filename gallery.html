@@ -8,7 +8,7 @@
 <body>
 	<section id="topBar"></section><!--end topBar-->
 	<div id="siteContainer">
-
+        <div id="yellowBulb"><img src="images/yellow_bulb.jpg" alt="yellowBulb"></div>
     	<header id="mainHeader">
         	<a href="index.html">
                 <div id="logoStatic"></div>
@@ -31,76 +31,140 @@
             </nav><!-- end mainNav -->
         </header><!--end mainHeader-->
 
-        <section id="galleryFilter">
+        <section id="galleryFilterContainer">
             <h1>TOPS</h1>
             <p>
                 Explore our newest winter collection. We have the most fashionable tops that will suit anyone's style. Make your wardrobe more you.
             </p>
-            <img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20">
-            <nav id="galleryFilterNav">
+            <nav id="galleryFilter">
                 <h2 class="hidden">Filter Navigation</h2>
                 <ul>
-                    <li>STYLE</li>
-                    <li>MATERIAL</li>
-                    <li>COLOUR</li>
-                    <li>SIZE</li>
-                    <li>SORT BY PRICE</li>
+                    <li>STYLE</li><span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span>
+                    <li>MATERIAL</li><span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span>
+                    <li>COLOUR</li><span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span>
+                    <li>SIZE</li><span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span>
+                    <li>SORT BY PRICE</li><span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span>
                 </ul>
             </nav>
         </section>
         <section id="galleryImages">
-            <h2 class="hidden">Static Gallery Images</h2>
+            <h2 class="hidden">Gallery Images</h2>
             <div class="galleryRow">
-                <div class="galleryWrap">
-                    <img class="galleryImgRollover" src="images/gallery_jeans_jacket_hover_1.jpg" alt="Jean Jacket">
-                    <img class="galleryImgStatic" src="images/gallery_jeans_jacket_static_1.jpg" alt="Jean Jacket">
-                </div>
-                <div class="galleryWrap">
-                    <img class="galleryImgRollover" src="images/gallery_leather_jacket_hover_2.jpg" alt="Leather Jacket">
-                    <img class="galleryImgStatic" src="images/gallery_leather_jacket_static_2.jpg" alt="Leather Jacket">
-                </div>
-                <div class="galleryWrap">
-                    <img class="galleryImgRollover" src="images/gallery_blazer_hover_3.jpg" alt="Royal Blue Blazer">
-                    <img class="galleryImgStatic" src="images/gallery_blazer_static_3.jpg" alt="Royal Blue Blazer">
-                </div>
-            </div>
+                <a href="#" target="_blank">
+                    <div class="galleryWrap">
+                        <img class="galleryImgRollover" src="images/gallery_jeans_jacket_hover_1.jpg" alt="Jean Jacket">
+                        <img class="galleryImgStatic" src="images/gallery_jeans_jacket_static_1.jpg" alt="Jean Jacket">
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="galleryWrap">
+                        <img class="galleryImgRollover" src="images/gallery_leather_jacket_hover_2.jpg" alt="Leather Jacket">
+                        <img class="galleryImgStatic" src="images/gallery_leather_jacket_static_2.jpg" alt="Leather Jacket">
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="galleryWrap">
+                        <img class="galleryImgRollover" src="images/gallery_blazer_hover_3.jpg" alt="Royal Blue Blazer">
+                        <img class="galleryImgStatic" src="images/gallery_blazer_static_3.jpg" alt="Royal Blue Blazer">
+                    </div>
+                </a>
+            </div> <!--end gallery row 1 -->
 
-            <div class="galleryRow">
-                <div class="galleryWrap">
-                    <img class="galleryImgRollover" src="images/gallery_purple_sweater_hover_4.jpg" alt="Purple Sweater">            
-                    <img class="galleryImgStatic" src="images/gallery_purple_sweater_static_4.jpg" alt="Purple Sweater">
-                </div>
-                <div class="galleryWrap">
-                    <img class="galleryImgRollover" src="images/gallery_red_chequed_shirt_hover_5.jpg" alt="Red Flannel">
-                    <img class="galleryImgStatic" src="images/gallery_red_chequed_shirt_static_5.jpg" alt="Red Flannel">
-                </div>
-                <div class="galleryWrap">
-                    <img class="galleryImgRollover" src="images/gallery_blue_chequed_shirt_hover_6.jpg" alt="Blue Flannel">
-                    <img class="galleryImgStatic" src="images/gallery_blue_chequed_shirt_static_6.jpg" alt="Blue Flannel">
-                </div>
-            </div>
-
-            <div class="galleryRow">
-                <div class="galleryWrap">
-                    <img class="galleryImgRollover" src="images/gallery_pink_sweater_hover_7.jpg" alt="Pink Sweater">
-                    <img class="galleryImgStatic" src="images/gallery_pink_sweater_static_7.jpg" alt="Pink Sweater">
-                </div>
-                <div class="galleryWrap">
-                    <img class="galleryImgRollover" src="images/gallery_green_jacket_hover_8.jpg" alt="Green Zebra Stripes Jacket">
-                    <img class="galleryImgStatic" src="images/gallery_green_jacket_static_8.jpg" alt="Green Zebra Stripes Jacket">
-                </div>
-                <div class="galleryWrap">
-                    <img class="galleryImgRollover" src="images/gallery_onesie_hover_9.jpg" alt="Elephant Onesie">
-                    <img class="galleryImgStatic" src="images/gallery_onesie_static_9.jpg" alt="Elephant Onesie">
-                </div>
-            </div>
-        </section><!-- end gallery -->
-
-            <div class="galleryText"><!-- make div???-->
+            <div class="galleryTextRow">
+                <div class="galleryText">
                     <p class="galleryNew">NEW IN</p>
                     <p class="galleryDescription">Jean Jacket</p>
                     <p class="galleryPrice">$50.00</p>
-            </div>
+                </div>
+                <div class="galleryText">
+                    <p class="galleryNew">NEW IN</p>
+                    <p class="galleryDescription">Leather Jacket</p>
+                    <p class="galleryPrice">$60.00</p>
+                </div>
+                <div class="galleryText">
+                    <p class="galleryNew">NEW IN</p>
+                    <p class="galleryDescription">Royal Blue Blazer</p>
+                    <p class="galleryPrice">$55.00</p>
+                </div>
+            </div> <!-- end text box row 1 -->
+
+            <div class="galleryRow">
+                <a href="#" target="_blank">
+                    <div class="galleryWrap">
+                        <img class="galleryImgRollover" src="images/gallery_purple_sweater_hover_4.jpg" alt="Purple Sweater">            
+                        <img class="galleryImgStatic" src="images/gallery_purple_sweater_static_4.jpg" alt="Purple Sweater">
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="galleryWrap">
+                        <img class="galleryImgRollover" src="images/gallery_red_chequed_shirt_hover_5.jpg" alt="Red Flannel">
+                        <img class="galleryImgStatic" src="images/gallery_red_chequed_shirt_static_5.jpg" alt="Red Flannel">
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="galleryWrap">
+                        <img class="galleryImgRollover" src="images/gallery_blue_chequed_shirt_hover_6.jpg" alt="Navy Flannel">
+                        <img class="galleryImgStatic" src="images/gallery_blue_chequed_shirt_static_6.jpg" alt="Navy Flannel">
+                    </div>
+                </a>
+            </div><!-- end gallery row 2 -->
+
+            <div class="galleryTextRow">
+                <div class="galleryText">
+                    <p class="galleryNew">NEW IN</p>
+                    <p class="galleryDescription">Soft Purple Sweater</p>
+                    <p class="galleryPrice">$25.00</p>
+                </div>
+                <div class="galleryText">
+                    <p class="galleryNew">NEW IN</p>
+                    <p class="galleryDescription">Cherry Flannel</p>
+                    <p class="galleryPrice">$20.00</p>
+                </div>
+                <div class="galleryText">
+                    <p class="galleryNew">NEW IN</p>
+                    <p class="galleryDescription">Navy Flannel</p>
+                    <p class="galleryPrice">$20.00</p>
+                </div>
+            </div> <!-- end text box row 2 -->
+
+            <div class="galleryRow">
+                <a href="#" target="_blank">
+                    <div class="galleryWrap">
+                        <img class="galleryImgRollover" src="images/gallery_pink_sweater_hover_7.jpg" alt="Cable Knit Pink Sweater">
+                        <img class="galleryImgStatic" src="images/gallery_pink_sweater_static_7.jpg" alt="Cable Knit Pink Sweater">
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="galleryWrap">
+                        <img class="galleryImgRollover" src="images/gallery_green_jacket_hover_8.jpg" alt="Green Zebra Stripes Jacket">
+                        <img class="galleryImgStatic" src="images/gallery_green_jacket_static_8.jpg" alt="Green Zebra Stripes Jacket">
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="galleryWrap">
+                        <img class="galleryImgRollover" src="images/gallery_onesie_hover_9.jpg" alt="Elephant Onesie">
+                        <img class="galleryImgStatic" src="images/gallery_onesie_static_9.jpg" alt="Elephant Onesie">
+                    </div>
+                </a>
+            </div><!-- end gallery row 3 -->
+            <div class="galleryTextRow">
+                <div class="galleryText">
+                    <p class="galleryNew">NEW IN</p>
+                    <p class="galleryDescription">Cable Knit Pink Sweater</p>
+                    <p class="galleryPrice">$30.00</p>
+                </div>
+                <div class="galleryText">
+                    <p class="galleryNew">NEW IN</p>
+                    <p class="galleryDescription">Funky Zebra Stripes Jacket</p>
+                    <p class="galleryPrice">$50.00</p>
+                </div>
+                <div class="galleryText">
+                    <p class="galleryNew">NEW IN</p>
+                    <p class="galleryDescription">Elephant Onesie</p>
+                    <p class="galleryPrice">$60.00</p>
+                </div>
+            </div> <!-- end text box row 3 -->
+        </section><!-- end gallery -->
 
         <footer id="mainFooter">
             <nav class="footerNav">
