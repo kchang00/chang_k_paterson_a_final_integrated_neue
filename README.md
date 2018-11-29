@@ -1,5 +1,17 @@
 # final_integrated_neue
 
+
+
+Nov. 29 Aaron & Kayla
+- Combined index.html 
+- Amended errors and discrepencies
+- modifired the footer and index
+- we added the links to the rollovers and put hover links to the index
+- modified the contact page
+- changed the margins for the text gallery
+- resized the logo with MATH!! 
+
+
 Nov. 28 - Kayla
 - Fixed gallery layout
 - Updated home psd

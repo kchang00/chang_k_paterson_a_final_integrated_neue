@@ -10,7 +10,7 @@
 <body>
 <div id="siteContainer">
     <div id="yellowBulb"><img src="images/yellow_bulb.jpg" alt="yellowBulb"></div>
-    <h1 class="hidden">Neue Clothing Co.</h1>
+    <h1 class="hidden">Gallery Page</h1>
         <header id="mainHeader">
             <a href="index.html">
                 <div id="logoStatic"></div>
@@ -35,18 +35,18 @@
         </header><!--end mainHeader-->
 
         <section id="galleryFilterContainer">
-            <h1>TOPS</h1>
+            <h2>TOPS</h2>
             <p>
                 Explore our newest winter collection. We have the most fashionable tops that will suit anyone's style. Make your wardrobe more you.
             </p>
             <nav id="galleryFilter">
                 <h2 class="hidden">Filter Navigation</h2>
                 <ul>
-                    <li>STYLE</li><span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span>
-                    <li>MATERIAL</li><span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span>
-                    <li>COLOUR</li><span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span>
-                    <li>SIZE</li><span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span>
-                    <li>SORT BY PRICE</li><span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span>
+                    <li>STYLE<span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span></li>
+                    <li>MATERIAL<span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span></li>
+                    <li>COLOUR<span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span></li>
+                    <li>SIZE<span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span></li>
+                    <li>SORT BY PRICE<span class="filterArrow"><img src="images/icon_arrow_down.svg" alt="Down Arrow" width="20"></span></li>
                 </ul>
             </nav>
         </section>
@@ -170,30 +170,34 @@
         </section><!-- end gallery -->
 
         <footer id="mainFooter">
-            <nav class="footerNav">
-                  <h2 class="hidden">Footer Navigation</h2>
-                    <ul>
-                        <li><a href="#">NEW ARRIVALS</a></li>
-                          <li><a href="gallery.html">CLOTHING</a></li>
-                          <li><a href="#">BLOG</a></li>
-                          <li><a href="contact.html">CONTACT</a></li>
-                          <li><a href="#">CAREERS</a></li>
-                          <li><a href="#">AFFILIATES</a></li>
-                          <li><a href="#">SITE MAP</a></li>
-                     </ul>
-            </nav>
+            <h2 class="hidden">Footer Navigation</h2>
+
+                <nav class="footerNav">
+                    <h3 class="hidden">Links</h3>
+                        <ul>
+                            <li><a href="#">NEW ARRIVALS</a></li>
+                              <li><a href="gallery.html">CLOTHING</a></li>
+                              <li><a href="#">BLOG</a></li>
+                              <li><a href="contact.html">CONTACT</a></li>
+                              <li><a href="#">CAREERS</a></li>
+                              <li><a href="#">AFFILIATES</a></li>
+                              <li><a href="#">SITE MAP</a></li>
+                         </ul>
+                </nav>
 
             <div class="newsLetter">
-                    <h3>JOIN OUR NEWSLETTER</h3>
-                    <p>Sign up for email updates on the latest Neue collection, campaigns and videos.</p>
-                    <!-- subcribe form input -->
-                    <form action="form.php" method="POST" autocomplete="off">
-                    <input class="text" type="text" required id="name" placeholder="Enter your email" size="30" name="email"/>
-                    <input class="submit" type="submit" name="Subscribe" value="Subscribe"/>
-                    </form><!--end form-->
-            </div>
-             <!-- <div id="copyRight"> <p>Neue Clothing Terms & Conditions</p></div> --><!--end Copyright -->
-        </footer><!--end mainFooter-->
+            <h3>JOIN OUR NEWSLETTER</h3>
+                <p>Sign up for email updates on the latest Neue collection, campaigns and videos.</p><!-- subcribe form input -->
+                
+                <form action="form.php" method="POST" autocomplete="off">
+                    <input class="text" type="text" required id="name" placeholder="Enter your Email" size="30" name="email"/>
+                    <input class="subBut" type="submit" name="Subscribe" value="Subscribe"/>
+                </form><!--end form-->
+
+                <div id="copyRight"><p>© 2019 Neue Clothing. All Rights Reserved</p></div><!-- end copyright -->
+                <div id="tealBulb"><img src="images/teal_bulb.jpg" alt="tealBulb"></div>
+            </div><!-- end newsLetter -->
+        </footer><!-- end main footer -->
     </div><!--end siteContainer-->
 <script src="js/main.js"></script>    
 </body>

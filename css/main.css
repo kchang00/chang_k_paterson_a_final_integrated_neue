@@ -7,7 +7,7 @@
 
 /* need ul and ol for gallery filter! */
 
-div,p,body,header,footer,section,article,nav, ul, ol 
+div,p,body,header,footer,section,article,nav, ul, ol, h3 
 { 
 	margin: 0; 
 	padding: 0; 
@@ -37,7 +37,7 @@ a:visited is for visited, and just a applies to both.*/
 a:link, a:visited
 { 
 	color: #9b9b9b; /* This changes the links to gray */ 	
-	text-decoration:none; 	
+	text-decoration: none; 	
 }
 
 a:hover, a:active
@@ -52,6 +52,22 @@ a:hover, a:active
 .hidden
 {
 	display: none;
+}
+
+.subBut
+{
+	height: 35px;
+	width: 75px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #1c8ab6;
+	color: #fff;
+	border: none;
+}
+
+#subBut:hover
+{
+	cursor: pointer;
 }
 
 /*Site Container*/
@@ -81,7 +97,7 @@ a:hover, a:active
 	flex-direction: row;
   	justify-content: flex-start;
   	margin-top: 40px;
-	padding-bottom: 10px;
+  	margin-bottom: 50px;
 
 }
 
@@ -91,9 +107,9 @@ a:hover, a:active
 {
 	position: absolute;
 	background: white url("../images/logo_static.svg") no-repeat;
-    margin-top: 60px;
-    height: 32px;
-    width: 167px;
+    margin-top: 40px;
+    height: 61px;
+    width: 318px;
 }
 
 #logoStatic:hover
@@ -103,9 +119,8 @@ a:hover, a:active
 
 #logoHover img
 {
-	margin-top: 60px;
-	height: 32px;
-	width: 167px;
+	margin-top: 40px;
+	width: 311px;
 }
 
 /*This is also a flex item*/
@@ -149,8 +164,6 @@ a:hover, a:active
 
 #promo 
 {
-	margin-top: 40px;
-/*	padding-bottom: 40px;*/
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
@@ -170,15 +183,13 @@ a:hover, a:active
 
 /* TOPS & BOTTOMS section start */
 
-#productInfo 
+#productCon 
 {
 	display: flex;
 	flex-direction: row;
-  	justify-content: space-evenly;
+  	justify-content: space-between;
   	vertical-align: top;
-	padding-bottom: 40px;
-	margin-top: 40px;
-	margin-bottom: 152px;
+	padding-top: 50px;
 }
 
 
@@ -186,7 +197,7 @@ a:hover, a:active
 
 /* comment this out with inspect element?*/
 
-#productInfo h3
+#productCon h3
 {
 
 	font-family: 'Barlow Condensed', sans-serif;
@@ -196,45 +207,36 @@ a:hover, a:active
 	margin-bottom: 20px;
 }
 
+.productCol
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 /* add hover for tops images */
 
 .topsImage
 {
-/*	margin-left: 32px;*/
-	width: 439px;
-	height: 566px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	position: relative;
 }
 
-/* hover */
-/*.topsImage:hover{
-	content: url('../images/home_page_tops_hover.jpg'); 
-	width: 439px;
-	height: 566px;
+.productStatic
+{
+	position: absolute;
 }
-*/
 
-/* add hover for bottom images */
+.productStatic:hover
+{
+	opacity: 0;
+	position: absolute;
+}
 
+/* bottoms hover */
 .bottomsImage
 {
-	/*margin-right: 32px;*/
-	width: 439px;
-	height: 566px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	position: relative;
+
 }
-
-/* hover */
-/*.bottomsImage:hover{
-
-	padding-top: 82px;
-	content: url('../images/home_page_bottoms_hover.jpg'); 
-	width: 439px;
-	height: 566px;
-
-}*/
 
 /***** Gallery Page *****/
 
@@ -243,7 +245,7 @@ a:hover, a:active
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	background-color: #eff1fd;
+	background-color: #f0f0f0;
 	padding: 0px 0px 20px 30px;
 }
 
@@ -298,7 +300,7 @@ a:hover, a:active
 .galleryRow
 {
 
-	margin-top: 28px;
+	margin-top: 48px;
 	display: flex;
 	flex-direction: row;
   	justify-content: space-between;
@@ -316,8 +318,7 @@ a:hover, a:active
 .galleryImgStatic
 {
 	position: relative;
-/*	top: 0;
-	left: 0;*/
+
 }
 
 .galleryImgStatic:hover 
@@ -329,8 +330,7 @@ a:hover, a:active
 .galleryImgRollover
 {
 	position: absolute;
-/*	top: 0;
-	left: 0;*/
+
 }
 
 .galleryImgStatic:hover 
@@ -350,8 +350,9 @@ a:hover, a:active
 .galleryText
 {
 	margin-top: 20px;
-	padding-bottom: 40px;
-	border-bottom: 3px #1c8ab6 solid;
+	margin-bottom: 20px;
+	padding-bottom: 87px;
+	border-bottom: 2px #1c8ab6 solid;
 	text-align: left;
 	width: 240px;
 }
@@ -368,6 +369,7 @@ a:hover, a:active
 	font-size: 20px;
 	font-weight: bold;
 	line-height: 40px;
+	padding-bottom: 28px;
 }
 
 /***** Start of Contact Us section *****/
@@ -376,10 +378,8 @@ a:hover, a:active
 
 	width: 920px;
 	padding-top: 20px;
-	/*padding-left: 20px;
-	padding-right: 20px;*/
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 
@@ -403,6 +403,7 @@ a:hover, a:active
 	width: 450px;
 	margin-bottom: 30px;
 	padding-left: 60px;
+	margin-left: auto;
 }
 
 #contactText{
@@ -430,24 +431,26 @@ input, textarea{
 }
 
 
-#submit{
+/* Start of the Contact Form  */
+.listCon{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
-	width: 75px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
-	margin-top: 30px;
-	margin-bottom: 5px;
-	background-color: #2073a8;
-	color: #fff;
-	border: solid 1px #003471;
 }
 
-#listCat{
 
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
+#listCat{
+	font-size: 20px;
+	list-style: none;
+
+}
+
+
+#listCat ul li{
+
+	list-style: none;
+
 }
 
 
@@ -459,6 +462,8 @@ input, textarea{
 	flex-direction: row;
   	justify-content: flex-start;
   	height: 415px;
+  	position: relative;
+  	margin-top: 80px;
 }
 
 .footerNav
@@ -466,15 +471,13 @@ input, textarea{
 
 	font-family: 'Barlow Condensed', sans-serif;
 	letter-spacing: 0.04em;
-	margin-top: 11px; 
-	margin-left: 61px; /* move over a little from the left*/
 	font-size: 30px;
 }
 
 
 .footerNav li
 {	
-	text-decoration-style: none;
+	list-style: none;
 	color: #9b9b9b;
 	list-style-type: none;
 	line-height: 35px;
@@ -483,10 +486,8 @@ input, textarea{
 /* newsletter styling */
 .newsLetter
 {
-	margin-right: 40px;
 	margin-left: auto;
-	width: 480px;
-	height: 155px;
+	width: 408px;
 }
 
 /* Specific selector for the newsletter title */
@@ -496,14 +497,13 @@ input, textarea{
 	font-family: 'Barlow Condensed', sans-serif;
 	font-weight: 600;
 	font-size: 40px;
-	padding: 0;
+	padding-bottom: 28px;
 }
 
 /* point size for newsletter */
 .newsletter h3, p
 {
 	font-size: 16px;
-	padding: 0px;
 }
 
 .newsLetter p
@@ -512,25 +512,16 @@ input, textarea{
 }
 
 /* styling the form */
+
 input{
 
 	display: block;
 	padding: 10px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	width: 300px;
+	width: 388px;
 	border: 1px solid #efefef;
 	background-color: #efefef;
-}
-
-.submit{
-	height: 35px;
-	width: 75px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background-color: #666;
-	color: #fff;
-	border: none;
 }
 
 #copyRight
@@ -553,21 +544,8 @@ input{
 {
 	
 	position:absolute;
-	right: 388px;
+	right: 470px;
 	bottom: 0px;
 	z-index: -1;
 }
 
-/*#contentCon{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-}
-
-#contentCon p 
-{
-	line-height: 630px;
-}*/
