@@ -230,6 +230,7 @@ a:hover, a:active
 {
 	opacity: 0;
 	position: absolute;
+	transition: 0.2s;
 }
 
 /* bottoms hover */
@@ -266,7 +267,7 @@ a:hover, a:active
 	line-height: 26px;
 	color: #333;
 	width: 623px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 #galleryFilter ul li
@@ -276,6 +277,16 @@ a:hover, a:active
 	font-size: 15px;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+.filterSticky
+{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #f0f0f0;
+  z-index: 1;
+  padding: 20px 0px 20px 30px;
 }
 
 .filterArrow
@@ -326,17 +337,13 @@ a:hover, a:active
 {
 	opacity: 0;
 	position: relative;
+	transition: 0.2s;
 }
 
 .galleryImgRollover
 {
 	position: absolute;
 
-}
-
-.galleryImgStatic:hover 
-{
-	opacity: 0;
 }
 
 .galleryTextRow
@@ -532,18 +539,41 @@ input{
 	background-color: #efefef;
 }
 
-#copyRight
+#socialCopyCon
 {
-	width: 380px;
-	height: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	margin-top: 70px;
-	height: 20px;
 }
-
 
 #copyRight p
 {	
 	font-size: 12px;
+}
+
+#socialMedia
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#socialMedia ul li
+{
+	filter: gray; /*for IE6-9*/
+	-webkit-filter: grayscale(80%); /* Chrome 19+ & Safari 6+ */
+	list-style: none;
+	display: inline;
+	padding: 7px;
+	align-items: center;
+}
+
+#socialMedia ul li:hover 
+{
+  filter: none;
+  -webkit-filter: grayscale(0%);
 }
 
 /* Footer teal and magenta bulb */
@@ -556,4 +586,8 @@ input{
 	bottom: 0px;
 	z-index: -1;
 }
+
+
+
+
 
