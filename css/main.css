@@ -45,6 +45,7 @@ a:hover, a:active
 	text-decoration: none; 
 	color: #d3356a; /* Magenta color change color on hover */
 	cursor: pointer;
+	transition: 0.6s;
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -424,6 +425,7 @@ a:hover, a:active
 	margin-top: 101px;
 	width: 400px;
 	height: 651px;
+	border: 0;
 }
 
 /* estbalishing the border in the middle */
