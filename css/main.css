@@ -65,7 +65,7 @@ a:hover, a:active
 	border: none;
 }
 
-#subBut:hover
+.subBut:hover
 {
 	cursor: pointer;
 }
@@ -376,7 +376,7 @@ a:hover, a:active
 
 #mainContact{
 
-	width: 920px;
+	width: 960px;
 	padding-top: 20px;
 	display: flex;
 	flex-direction: row;
@@ -391,10 +391,39 @@ a:hover, a:active
 	font-family: 'Barlow Condensed', sans-serif;
 	font-size: 60px;
 	color: #2073a8;
-	padding: 8px 0px 8px 5px;  /* trbl*/
+	padding: 8px 0px 8px 0px;  /* trbl*/
 	width: 920px;
 	margin-bottom: 40px;
 	color: #9b9b9b;
+}
+
+/* Start of the Contact Form  */
+.listCon{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+
+#listCat{
+	font-size: 20px;
+	list-style: none;
+
+}
+
+
+#listCat ul li{
+
+	list-style: none;
+
+}
+
+#contactMap
+{
+	margin-top: 101px;
+	width: 400px;
+	height: 651px;
 }
 
 /* estbalishing the border in the middle */
@@ -428,29 +457,6 @@ input, textarea{
 
 	width: 360px;
 	height: 200px;
-}
-
-
-/* Start of the Contact Form  */
-.listCon{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-}
-
-
-#listCat{
-	font-size: 20px;
-	list-style: none;
-
-}
-
-
-#listCat ul li{
-
-	list-style: none;
-
 }
 
 
